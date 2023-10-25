@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Eksploracja systemu Guru99</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>Przetestowanie systemu bankowości Guru99</mission>
+										<goals>Sprawdzenie funkcjonalności systemu poprzez wykonanie następujących czynności:
+1. Utworzenie nowego użytkownika w systemie
+2. Zalogowanie do systemu z poziomu konta Menagera
+3. Utworzenie nowego klienta w systemie
+4. Utworzenie rachunku bankowego klienta
+5. Usunięcie klienta z systemu</goals>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Utworzenie konta Menagera w systemie</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Przeglądarka Chrome wersja min 27
+
+ </preconds>
+										<steps>1. Wejdź na stronę https://demo.guru99.com/v4/
+2. Kliknij przycisk &quot;Here&quot; w sekcji &quot;Steps To Generate Access&quot;
+3. Wpisz adres mailowy w pole &quot;Email ID&quot;
+4. Kliknij przycisk &quot;Submit&quot;</steps>
+										<expected>1. Założenie konta Menagera w systemie
+2. Wyświetlenie komunikatu potwierdzającego założenie konta w systemie</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Tworzenie konta klienta w sytemie</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Zalogowanie w systemie na konto Menagera</preconds>
+										<steps>1. Kliknij przycisk &quot;New Customer&quot;
+2. Wypełnij wszystkie pola formularza zgodnie z walidacją
+3. Kliknij przycisk &quot;Submit&quot;</steps>
+										<expected>1. Założenie konta Klienta w systemie
+2. Wyświetlenie komunikatu potwierdzającego założenie konta Klienta</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
